@@ -7,42 +7,91 @@
  */
 
 $(document).ready(function () {
-	var songs = [
-		{
-			title: "rockstar",
-			artist: "Post Malone, 21 Savage",
-			cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/rockstar-album-cover.jpg",
-			audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20rockstar%20ft.%2021%20Savage%20(1).mp3",
-			color: "#c3af50"
-		},
-		{
-			title: "Let You Down",
-			artist: "NF",
-			cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/perception-album-cover.png",
-			audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/NF%20-%20Let%20You%20Down.mp3",
-			color: "#25323b"
-		},
-		{
-			title: "Silence",
-			artist: "Marshmello, Khalid",
-			cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/silence-album-cover.jpg",
-			audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Marshmello%20-%20Silence%20ft.%20Khalid.mp3",
-			color: "#c1c1c1"
-		},
-		{
-			title: "I Fall Apart",
-			artist: "Post Malone",
-			cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/stoney-cover-album.jpg",
-			audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/Post%20Malone%20-%20I%20Fall%20Apart.mp3",
-			color: "#cd4829"
-		},
-		{
-			title: "Fireproof",
-			artist: "VAX, Teddy Sky",
-			cover: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/fireproof-album-cover.jpeg",
-			audioFile: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/308622/VAX%20-%20Fireproof%20Feat%20Teddy%20Sky.mp3",
-			color: "#5d0126"
-		}
+	var songs = [{
+		artist: "RUM",
+		name: "Mashup Em Cứ Đi Đi",
+		url: "Musics/Mashup Em Cu Di Di Anh cu di di_ - Rum.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Reddy (Hữu Duy)",
+		name: "Nếu Một Ngày",
+		url: "Musics/NeuMotNgay-Reddy-5521044.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Reddy (Hữu Duy)",
+		name: "Thì Thôi",
+		url: "Musics/ThiThoi-Reddy-5461229.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Reddy (Hữu Duy)",
+		name: "Vài Giây Nữa Thôi",
+		url: "Musics/VaiGiayNuaThoi-ReddyHuuDuy-5404370.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Trung Quân",
+		name: "Thả Vào Mưa",
+		url: "Musics/ThaVaoMua.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Đức Phúc",
+		name: "Hết Thương Cạn Nhớ",
+		url: "Musics/HetThuongCanNho.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Bùi Anh Tuấn",
+		name: "Hẹn Một Mai",
+		url: "Musics/HenMotMai-BuiAnhTuan-4652623.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Chillies",
+		name: "Và Thế Là Hết",
+		url: "Musics/VaTheLaHet-Chillies-5833412.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Dig Didzay",
+		name: "Nếu Anh Đi (Cover)",
+		url: "Musics/NeuAnhDi.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Trung Quân Idol",
+		name: "Trót Yêu",
+		url: "Musics/TrotYeu-TrungQuanIdol-2967468.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Noo Phước Thịnh",
+		name: "Thương Em Là Điều Anh Không Thể Ngờ",
+		url: "Musics/ThuongEmLaDieuAnhKhongTheNgo-NooPhuocThinh-5827347.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Thái Đinh",
+		name: "Đi Qua Mùa Hạ",
+		url: "Musics/DiQuaMuaHa-ThaiDinh-6037082.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Thái Đinh",
+		name: "Phố Không Em",
+		url: "Musics/PhoKhongEm-ThaiDinh-4475322.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Trung Quân Idol",
+		name: "Dấu Mưa",
+		url: "Musics/DauMua-TrungQuanIdol-2640897.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Trung Quân Idol",
+		name: "Chiều Nay Không Có Mưa Bay",
+		url: "Musics/ChieuNayKhongCoMuaBay-TrungQuanIdol-3314229.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "N Ly",
+		name: "Anh nên yêu cô ấy",
+		url: "Musics/Anh Nen Yeu Co Ay - N Ly [128kbps_MP3].mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
+	}, {
+		artist: "Vũ",
+		name: "Lạ Lùng",
+		url: "Musics/LaLung-Vu-4749614.mp3",
+		picture: "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
 	];
 	
 	for (let song of songs) {
